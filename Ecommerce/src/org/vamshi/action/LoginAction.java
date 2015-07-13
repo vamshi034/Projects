@@ -5,7 +5,6 @@ import java.util.Map;
 
 import org.apache.struts2.dispatcher.SessionMap;
 import org.apache.struts2.interceptor.SessionAware;
-import org.apache.struts2.interceptor.validation.SkipValidation;
 import org.vamshi.DAO.UserDAO;
 
 import com.opensymphony.xwork2.ActionSupport;

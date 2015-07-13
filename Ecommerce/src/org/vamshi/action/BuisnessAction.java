@@ -9,9 +9,6 @@ import org.vamshi.DAO.CartDAO;
 import org.vamshi.DAO.UserDAO;
 import org.vamshi.DTO.CartPojo;
 
-import com.google.gson.Gson;
-import com.opensymphony.xwork2.Action;
-
 public class BuisnessAction implements SessionAware{
 	private String itemName;
 	private double price;

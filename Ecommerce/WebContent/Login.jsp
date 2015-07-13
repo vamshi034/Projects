@@ -39,7 +39,7 @@
 
 </style>
 <!--Bootstrap-->
-<link href="css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="bootstrap.min.css" rel="stylesheet" media="screen">
 <title>Login Page</title>
     <sb:head/>
 <script>
@@ -74,16 +74,31 @@ $(document).ready(function(){
 			=======================================
 			-->
 			<div id="errorRemover"> <!-- TODO: Find an alternative to fix redundant errors on logout. -->
-			<s:form id="loginForm" action="asdf" enctype="multipart/form-data" theme="bootstrap" cssClass="well form-search" method="post" validate="true">
+			<form id="loginForm" action="asdf" enctype="multipart/form-data" class="well form-search" method="post">
 				<div class="form-group">
-					<s:textfield label="Login ID" key="userId" />
+					<label for="userNameForm">User Name: </label>
+					<input type="text" id="userNameForm" name="userId" />
 				</div>
 				<div class="form-group">
-					<s:password label="Password" key="password" />
+					<label for="passwordForm">Password: </label>
+					<input type="password" id="passwordForm" name="password" />
 				</div>
-				<s:submit cssClass="btn btn-primary" />
-			</s:form>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
 			</div>
+			
+<!-- 			<div id="errorRemover"> TODO: Find an alternative to fix redundant errors on logout. -->
+<%-- 			<s:form id="loginForm" action="asdf" enctype="multipart/form-data" theme="bootstrap" cssClass="well form-search" method="post" validate="true"> --%>
+<!-- 				<div class="form-group"> -->
+<%-- 					<s:textfield label="Login ID" key="userId" /> --%>
+<!-- 				</div> -->
+<!-- 				<div class="form-group"> -->
+<%-- 					<s:password label="Password" key="password" /> --%>
+<!-- 				</div> -->
+<%-- 				<s:submit cssClass="btn btn-primary" /> --%>
+<%-- 			</s:form> --%>
+<!-- 			</div> -->
+			
 			<!--
 					Create New User Form
 			=======================================
